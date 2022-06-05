@@ -14,9 +14,7 @@ header {
 }
 
 span {
-  font-size: 40px;
   margin: 20px;
-  font-weight: bold;
 }
 
 a {
@@ -30,4 +28,18 @@ a {
   border-style: solid;
   display: inline-block;
   padding: 5px;
+}
+
+#current_page {
+  text-decoration: underline;
+}
+
+.tap {
+  margin: 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tap:hover {
+  text-decoration: underline;
 }

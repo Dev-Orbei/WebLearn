@@ -14,9 +14,7 @@ header {
 }
 
 span {
-  font-size: 40px;
   margin: 20px;
-  font-weight: bold;
 }
 
 a {
@@ -33,4 +31,14 @@ a {
   border: 1px solid #F2F2F2;
   margin: 20px;
   padding: 20px;
+}
+
+.tap {
+  margin: 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tap:hover {
+  text-decoration: underline;
 }
