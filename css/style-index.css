@@ -27,10 +27,21 @@ a {
   padding: 10px;
 }
 
+#typing {
+  display: inline-block;
+  border-right: 3px solid #F2F2F2;
+  animation: blink 1s step-end infinite;
+}
+
 .box {
   border: 1px solid #F2F2F2;
   margin: 20px;
   padding: 20px;
+}
+
+.console {
+  font-size: 25px;
+  margin: 0px;
 }
 
 .tap {
@@ -41,4 +52,10 @@ a {
 
 .tap:hover {
   text-decoration: underline;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
