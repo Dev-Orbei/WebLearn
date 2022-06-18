@@ -19,12 +19,99 @@
       </span>
       <span>
         <a href="js_part.html">
-          <p class="tap">#JS</p>
+          <p class="tap">#Examples</p>
         </a>
       </span>
     </header>
     <div id="index"><a href="index.html">index</a></div>
+    <h1 class="title">{ Attribute }</h1>
 
+    <div class="side_bar">
+      <p class="subject"> <b>[Common]</b> </p>
+      <ul class="content">
+        <li>height : 높이</li>
+        <li>width : 너비</li>
+        <li>padding : 내부 여백(10px:top 10px:right 5px:bottom 5px:left)</li>
+        <li>margin : 외부 여백(10px:top,bottom 5px:left,right)</li>
+        <li>padding-top/bottom/left/right : 내부 여백을 따로 설정</li>
+        <li>margin-top/bottom/left/right : 외부 여백을 따로 설정</li>
+        <li>box-shadow : 사각형 그림자 생성(10px:x-offset 10px:y-offset 5px:blur black:color)</li>
+        <li>float : 요소를 떠 있게 만듬(레이아웃에서 벗어나게 만듬)</li>
+        <li>clear : float 효과를 제거</li>
+        <li>overflow : visible | hidden | scroll | auto</li>
+        <li>opacity : 투명도</li>
+      </ul>
+
+      <p class="subject"> <b>[Font]</b> </p>
+      <ul class="content">
+        <li>color : 글자 색상을 설정</li>
+        <li>font : 여러 폰트 설정을 한 번에 설정</li>
+        <li>font-size : 폰트 크기</li>
+        <li>font-family : 폰트 이름</li>
+        <li>font-style : 폰트 기울임 효과(italic)</li>
+        <li>font-weight : 폰트 굵기 효과(normal | bold | bolder | lighter | number | initial | inherit)</li>
+        <li>text-decoration : 폰트 밑줄 효과(line-through | overline | underline) and (solid | double | dotted | dashed | wavy)</li>
+        <li>text-shadow : 글자 그림자(5px:x-offset 5px:y-offset 10px:blur red:color)</li>
+        <li>text-align : 글자 정렬 방식(start | end | center | justify)</li>
+      </ul>
+
+      <p class="subject"> <b>[Background]</b> </p>
+      <ul class="content">
+        <li>background : 배경 속성을 한번에 설정</li>
+        <li>background-color : 배경 색상</li>
+        <li>background-size : 배경 크기</li>
+        <li>background-image : 배경 이미지 설정 ( url("/img.png") )</li>
+        <li>background-position : top | bottom | left | right | center</li>
+        <li>background-repeat : repeat | repeat-x | repeat-y | no-repeat</li>
+        <li>background-attachment : scroll | fixed | local</li>
+      </ul>
+
+      <p class="subject"> <b>[Border]</b> </p>
+      <ul class="content">
+        <li>border : 테두리 속성을 한번에 설정 (5px:top 5px:right,left 10px:bottom solid:style black:color)</li>
+        <li>border-top/bottom/left/right : 해당 변의 속성을 한번에 설정</li>
+        <li>border-top/bottom/left/right-color : 해당 변의 색상을 설정</li>
+        <li>border-top/bottom/left/right-style : dotted | dashed | solid | double | groove | ridge | inset | outset | none | hidden</li>
+        <li>border-top/bottom/left/right-width : 해당 변의 굵기를 설정</li>
+        <li>border-top/bottom/left/right-radius : 모서리의 굴곡을 설정 (5px:top-left 5px:top-right,bottom-left 3px:bottom-right - *radius 설정은 대각선으로 연결)</li>
+      </ul>
+      <br>
+    </div>
+    <h1 class="title2">{ Selector }</h1>
+    <div class="side_bar">
+      <ul>
+        <li><p class="subject"> <b>* { } : 전체 선택자</b> </p></li>
+        <li><p class="subject"> <b>tag_name { } : 태그 선택자</b> </p></li>
+        <li><p class="subject"> <b>.class_name { } : 클래스 선택자</b> </p></li>
+        <li><p class="subject"> <b>#id_name { } : 아이디 선택자</b> </p></li>
+        <li><p class="subject"> <b>[attribute] { } : 속성 선택자</b> </p>
+          <ul>
+            <li>[attribute=value] : 정확히 value인 모든 속성</li>
+            <li>[attribute~=value] : 가진 값 중에 value가 있는 모든 속성</li>
+            <li>[attribute|=value] : 정확히 value거나 value로 시작하면서 뒤에 '-'가 붙는 모든 속성</li>
+            <li>[attribute^=value] : value를 접두사로 가지고 있는 모든 속성</li>
+            <li>[attribute$=value] : value를 접미사로 가지고 있는 모든 속성</li>
+            <li>[attribute*=value] : value라는 단어를 하나 이상 포함한 모든 속성</li>
+          </ul>
+        </li>
+        <li><p class="subject"> <b>tag_name1 tag_name2 { } : 조합 선택자</b> </p>
+          <ul>
+            <li>tag_name1   tag_name2 : tag_name1 내의 모든 tag_name2 (하위 선택자)</li>
+            <li>tag_name1 > tag_name2 : 부모가 tag_name1인 모든 tag_name2 (자식 선택자)</li>
+            <li>tag_name1 + tag_name2 : tag_name1 바로 뒤에 있는 모든 tag_name2 (인접 형제 선택자)</li>
+            <li>tag_name1 ~ tag_name2 : tag_name1이 바로 앞에 있는 모든 tag_name2 (일반 형제 선택자)</li>
+          </ul>
+        </li>
+        <li><p class="subject"> <b> :num-child { } : 구조 선택자</b> </p>
+          <ul>
+            <li>:first-child : 첫번째 자식 요소 선택</li>
+            <li>:last-child : 마지막 자식 요소 선택</li>
+            <li>:nth-child(m) : m번째 요소 선택 (m에는 2n-1 같은 형태의 수식이 올 수 있음)</li>
+            <li>:nth-last-child(m) : 뒤에서부터 m번째 요소 선택</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <footer>Copyright ⓒ 2022 by Orbei all rights reseved</footer>
   </body>
 </html>

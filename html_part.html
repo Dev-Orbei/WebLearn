@@ -19,7 +19,7 @@
       </span>
       <span>
         <a href="js_part.html">
-          <p class="tap">#JS</p>
+          <p class="tap">#Examples</p>
         </a>
       </span>
     </header>
@@ -91,6 +91,25 @@
       <p class="subject"> <b>&lt;img&gt;</b> </p>
       <ul class="content">
         <li>이미지를 출력</li>
+        <li>이미지 속성
+          <ul>
+            <li>width/height : 이미지의 크기를 설정</li>
+            <li>alt : 이미지를 가져오지 못했을 때 대신 나타날 문구를 설정</li>
+            <li>src : 이미지 파일의 위치를 설정</li>
+            <li>border : 이미지의 테두리를 설정</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;figure&gt; ~ &lt;/figure&gt;</b> </p>
+      <ul class="content">
+        <li>컨텐츠에 설명을 추가</li>
+        <li>&lt;img&gt; 태그와 같이 많이 씀</li>
+      </ul>
+
+      <p class="subject"> <b>&lt;figcaption&gt; ~ &lt;/figcaption&gt;</b> </p>
+      <ul class="content">
+        <li>&lt;figure&gt; 태그의 하위 태그로 이 태그에 표시 될 문구를 적음</li>
       </ul>
 
       <p class="subject"> <b>&lt;audio&gt; ~ &lt;/audio&gt;</b> </p>
@@ -98,8 +117,11 @@
         <li>오디오를 재생</li>
         <li>출력과 재생 형식 설정 속성이 존재
           <ul>
-            <li>뭐시기</li>
-            <li>뭐시기</li>
+            <li>&lt;source&gt; ~ &lt;/source&gt; : 해당 태그로 오디오 파일의 위치와 타입을 설정</li>
+            <li>controls : 오디오 컨트롤러를 표시</li>
+            <li>autoplay : 페이지가 출력되면 오디오가 자동으로 재생</li>
+            <li>loop : 오디오의 반복 재생 여부를 설정</li>
+            <li>preload : 오디오가 재생 되기 전에 파일을 불러오는지의 여부</li>
           </ul>
         </li>
       </ul>
@@ -152,6 +174,107 @@
         <li>inline 형식으로 분할</li>
       </ul>
 
+      <p class="subject"> <b>&lt;form&gt; ~ &lt;/form&gt;</b> </p>
+      <ul class="content">
+        <li>입력 양식을 생성하는 태그</li>
+        <li>입력 양식 속성
+          <ul>
+            <li>action : 입력값을 넘겨줄 파일을 설정(JSP, PHP 등)</li>
+            <li>method : 웹 서버와 클라이언트 간 통신 방 지정</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;select&gt; ~ &lt;/select&gt;</b> </p>
+      <ul class="content">
+        <li>선택 목록을 추가하는 태그</li>
+        <li>선택 목록 속성 & 하위 태그
+          <ul>
+            <li>name : 선택 목록의 이름을 설정</li>
+            <li>multiple : 다중 선택 허용 설정</li>
+            <li>&lt;option&gt; ~ &lt;/option&gt; : 선택 항목 추가</li>
+            <li>&lt;optgroup&gt; ~ &lt;/optgroup&gt; : 선택 항목들을 묶음
+              <ul>
+                <li>label 태그로 항목 묶음의 이름을 설정 가능</li>
+              </ul>
+            </li>
+            <li>&lt;datalist&gt; ~ &lt;/datalist&gt; : 자동완성이 가능한 선택 항목들을 설정</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;input&gt; ~ &lt;/input&gt;</b> </p>
+      <ul class="content">
+        <li>&lt;form&gt; 태그의 하위 태그 폼 양식을 추가</li>
+        <li>입력 속성
+          <ul>
+            <li>value : &lt;input&gt; 태그의 초기값</li>
+            <li>name : &lt;input&gt;를 구별하기 위한 이름</li>
+            <li>onclick : 버튼 클릭 시 실행 될 JS 메서드를 지정
+              <ul>
+                <li>ex) onclick="alert('Clicked!')"</li>
+              </ul>
+            </li>
+            <li>type : &lt;input&gt; 태그의 유형을 지정
+              <ul>
+                <li>text : 텍스트를 입력 받음</li>
+                <li>password : 비밀번호를 입력 받음. 입력값은 점으로 대체되어 출력</li>
+                <li>radio : 중복 선택이 불가능한 둥근 모양의 선택 버튼</li>
+                <li>checkbox : 중복 선택이 가능한 각진 모양의 선택 버튼</li>
+                <li>file : 드라이브의 파일을 선택할 수 있는 창을 여는 버튼</li>
+                <li>image : 이미지를 버튼으로 만듬. 기능은 submit과 동일</li>
+                <li>hidden : 보이지는 않지만 서버에 전달 되는 버튼</li>
+                <li>submit : 입력값을 전부 서버에 전달하는 버튼</li>
+                <li>button : 평범한 버튼</li>
+                <li>reset : 입력값을 전부 초기화하는 버튼</li>
+                <li>date : 년도를 선택할 수 있는 달력을 출력</li>
+                <li>month : 년-월 형식으로 날짜 입력</li>
+                <li>week : 년-주 형식으로 날짜 입력</li>
+                <li>time : 시간만 입력</li>
+                <li>datetime-local : 년-월-일-시간 형식으로 입력</li>
+                <li>color : 색을 선택할 수 있는 팔레트를 출력</li>
+                <li>number : 숫자를 입력 할 수 있는 양식을 추가</li>
+                <li>email : 이메일 형식에 맞춰서만 입력을 받음</li>
+                <li>url : URL 형식에 맞춰서만 입력을 받음</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;fieldset&gt; ~ &lt;/fieldset&gt;</b> </p>
+      <ul class="content">
+        <li>입력 양식이 여러개일 경우 하나로 묶고 테두리를 생성</li>
+        <li>&lt;legend&gt; ~ &lt;/legend&gt; : fieldset에 출력 될 이름을 설정
+          <ul>
+            <li>align : 정렬 방향을 지정. 'align=center'로 중앙 정렬 가능</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;meter&gt; ~ &lt;/meter&gt;</b> </p>
+      <ul class="content">
+        <li>지정된 값을 막대그래프로 출력</li>
+        <li>&lt;legend&gt; ~ &lt;/legend&gt; : fieldset에 출력 될 이름을 설정
+          <ul>
+            <li>align : 정렬 방향을 지정. 'align=center'로 중앙 정렬 가능</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="subject"> <b>&lt;progress&gt; ~ &lt;/progress&gt;</b> </p>
+      <ul class="content">
+        <li>현재 진행율 막대 그래프로 출력</li>
+        <li>막대그래프 공통 속성
+          <ul>
+            <li>value : 실제로 측정 된 값</li>
+            <li>min, max : 입력 값의 범위(기본값은 0~1)</li>
+            <li>low, high : 허용 되는 입력 값의 범위(min, max 내에 존재하는 범위여야 함)</li>
+            <li>optimum : 데이터가 가지길 원하 기댓값</li>
+          </ul>
+        </li>
+      </ul>
+
       <p class="subject"> <b>&lt;marquee&gt; ~ &lt;/marquee&gt;</b> </p>
       <ul class="content">
         <li>움직이는 콘텐츠를 출력</li>
@@ -182,6 +305,7 @@
         <li>&amp;equals; : '=' </li>
         <li>&amp;commat; : '@' </li>
         <li>&amp;amp; : '&' </li>
+        <li>&amp;#decimal; : emoji </li>
       </ul>
 
       <br>
