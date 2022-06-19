@@ -25,6 +25,224 @@
     </header>
     <div id="index"><a href="index.html">index</a></div>
 
+    <h1 class="title"></h1>
+    <div class="side_bar">
+      <ul>
+        <li>
+          <p>조합 선택자 예제1</p>
+          <div class="canvas">
+            <h2>span p {</h2>
+              <p style="font-weight:bold">&nbsp;&nbsp;background-color: yellow</p>
+              <br>
+            <span style="margin: 0px">
+              <p id="a">&nbsp;&nbsp;'p tag' in 'span tag'</p>
+              <p id="a">&nbsp;&nbsp;'p tag' in 'span tag'</p>
+              <p id="a">&nbsp;&nbsp;'p tag' in 'span tag'</p>
+            </span style="margin: 0px">
+            <p>&nbsp;&nbsp;'p tag' not in 'span tag'</p>
+            <h2>}</h2>
+          </div>
+        </li>
+        <li>
+          <p>조합 선택자 예제2</p>
+          <div class="canvas">
+            <h2>span > p {</h2>
+              <p style="font-weight:bold">&nbsp;&nbsp;background-color: yellow</p>
+              <br>
+            <span style="margin: 0px">
+              <p id="b">&nbsp;&nbsp;'p tag' in 'span tag'</p>
+            </span>
+            <p>&nbsp;&nbsp;'p tag' not in 'span tag'</p>
+            <h2>}</h2>
+          </div>
+        </li>
+        <li>
+          <p>조합 선택자 예제3</p>
+          <div class="canvas">
+            <h2>span + p {</h2>
+              <p style="font-weight:bold">&nbsp;&nbsp;background-color: yellow</p>
+              <br>
+            <span style="margin: 0px">
+            </span>
+            <p id="c">&nbsp;&nbsp;'p tag' beside 'span tag'</p>
+            <p>&nbsp;&nbsp;'p tag' not beside 'span tag'</p>
+            <h2>}</h2>
+          </div>
+        </li>
+        <li>
+          <p>조합 선택자 예제4</p>
+          <div class="canvas">
+            <h2>span ~ p {</h2>
+              <p style="font-weight:bold">&nbsp;&nbsp;background-color: yellow</p>
+              <br>
+            <span style="margin: 0px">
+            </span>
+            <p id="d">&nbsp;&nbsp;'span tag' on the 'p tag'</p>
+            <p>&nbsp;&nbsp;'span tag' not on the 'span tag'</p>
+            <h2>}</h2>
+          </div>
+        </li>
+        <li>
+          <p>박스 모델 예제</p>
+          <div class="canvas">
+            <h2>text-align: justify</h2>
+            <div class="sample_box">
+              <p style="margin: 0px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet ligula non sem pellentesque, aliquet accumsan orci ultrices. Proin quis scelerisque ex. Etiam rutrum tellus nec nibh dapibus, a tristique purus gravida. Phasellus rutrum urna et justo vehicula, in accumsan eros vehicula. Aenean nunc tellus, condimentum quis aliquet a, pellentesque non felis.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p>테두리 예제</p>
+          <div class="canvas">
+              <span class="sample_border1"></span>
+              <span class="sample_border2"></span>
+              <span class="sample_border3"></span>
+              <br>
+              <span class="sample_border4"></span>
+              <span class="sample_border5"></span>
+              <span class="sample_border6"></span>
+          </div>
+        </li>
+        <li>
+          <p>pre 태그</p>
+          <div class="canvas">
+            <pre style="padding=0">
+              <span style="float: left;margin: 0px">왼쪽 상단</span><span style="float: right;margin: 0px">오른쪽 상단</span>
+
+
+
+
+
+              <span style="float: left;margin: 0px">왼쪽 하단</span><span style="float: right;margin: 0px">오른쪽 하단</span>
+</pre>
+          <p>used '&lt;pre&gt;' and 'float: left, right'</p>
+          </div>
+        </li>
+        <li>
+          <p>입력 양식 예제</p>
+          <div class="big_canvas">
+            <form action="" method="post">
+              <ul>
+                <li>type="button" : <input type="button"></li>
+                <li>type="checkbox" : <input type="checkbox"></li>
+                <li>type="color" : <input type="color"></li>
+                <li>type="date" : <input type="date"></li>
+                <li>type="datetime-local" : <input type="datetime-local"></li>
+                <li>type="email" : <input type="email"></li>
+                <li>type="file" : <input type="file"></li>
+                <li>type="hidden" : <input type="hidden"></li>
+                <li>type="image" : <input type="image"></li>
+                <li>type="month" : <input type="month"></li>
+                <li>type="number" : <input type="number"></li>
+                <li>type="password" : <input type="password"></li>
+                <li>type="radio" : <input type="radio"></li>
+                <li>type="range" : <input type="range"></li>
+                <li>type="reset" : <input type="reset"></li>
+                <li>type="search" : <input type="search"></li>
+                <li>type="submit" : <input type="submit"></li>
+                <li>type="tel" : <input type="tel"></li>
+                <li>type="text" : <input type="text"></li>
+                <li>type="time" : <input type="time"></li>
+                <li>type="url" : <input type="url"></li>
+                <li>type="week" : <input type="week"></li>
+              </ul>
+            </form>
+          </div>
+        </li>
+        <li>
+          <p>입력 양식 예제2</p>
+          <div class="canvas">
+              <form class="ex_form" action="index.html" method="post">
+                <fieldset>
+                  <legend>example</legend>
+                  <input type="text" name="" value="">
+                  <br>
+                  <input type="text" name="" value="">
+                  <br>
+                  <input type="submit" name="" value="제출">
+                  <input type="reset" name="" value="초기화">
+                </fieldset>
+              </form>
+              <p>used '&lt;form&gt;', '&lt;fieldset&gt;', '&lt;legend&gt;'</p>
+          </div>
+        </li>
+        <li>
+          <p>투명도 예제</p>
+          <div class="canvas" style="overflow:visible">
+            <div class="image_box">
+              <img src="media/images/img.png" width="100px">
+              <p>opacity: 100%;</p>
+            </div>
+            <div class="image_box2">
+              <img src="media/images/img.png" width="100px">
+              <p>opacity: 50%;</p>
+            </div>
+            <p>used 'background-color: linear-gradient()'</p>
+            <p class="image_box3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br><br><br><br><br></p>
+          </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li>
+          <p>이모지 출력 예제: &#128516;(&amp;#128516)	</p>
+        </li>
+        <li>
+          <p>텍스트 그림자 예제</p>
+          <div class="canvas">
+            <p style="font-weight:bold;text-shadow:10px 20px 0px blue;">text-shadow: 10px 20px 0px blue</p>
+            <br>
+            <p style="font-weight:bold;text-shadow:-10px -20px 0px blue;">text-shadow: -10px -20px 0px blue</p>
+            <br>
+            <p style="font-weight:bold;text-shadow:10px 20px 20px blue;">text-shadow: 10px 20px 20px blue</p>
+            <br>
+            <p style="font-weight:bold;text-shadow:0px 0px 20px blue;">text-shadow: 0px 0px 20px blue</p>
+          </div>
+        </li>
+        <li>
+          <p>선택 목록 예제</p>
+          <div class="canvas">
+            전공분야를 선택하세요. <select onchange="alert('Changed! : ' + this.value)">
+              <optgroup label="Computer &#128187;">
+                <option value="Software">Software</option>
+                <option value="Robot">Robot</option>
+                <option value="System">System</option>
+              </optgroup>
+              <optgroup label="Languag &#127758;">
+                <option value="Korea" selected>Korea</option>
+                <option value="English">English</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+              </optgroup>
+            </select>
+            <p>used '&lt;select&gt;', '&lt;optgroup&gt;', '&lt;option&gt;' and 'onchange=func()'</p>
+          </div>
+        </li>
+        <li>
+          <p>가상 선택자 예제</p>
+          <div class="bigger_canvas">
+            <h2>overflow: visible; (default)</h2>
+            <div id="pseudo_div" class="vis">
+              <img id="pseudo_img" src="media/images/img.png" width="140">
+              이미지가 오른쪽 정렬로 되어 있는데, 박스 영역을 벗어났습니다.
+            </div>
+
+            <br><br><br><br>
+
+            <h2>overflow: auto;</h2>
+            <div id="pseudo_div" class="auto">
+              <img id="pseudo_img" class="sizeup" src="media/images/img.png">
+              이미지가 박스 영역을 벗어날 경우에는 overflow 속성을 auto로 설정하여 해결합니다.
+            </div>
+
+            <div class="emoji_box">
+              <p class="emoji">&#128512;</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
     <footer>Copyright ⓒ 2022 by Orbei all rights reseved</footer>
   </body>
 </html>

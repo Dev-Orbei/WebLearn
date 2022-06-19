@@ -32,6 +32,85 @@ footer {
   left: 0;
 }
 
+span #a {
+  background: yellow;
+}
+
+span > #b {
+  background: skyblue;
+}
+
+span + #c {
+  background: lightgreen;
+}
+
+span ~ #d {
+  background: orange;
+}
+
+.sample_box {
+    background: lightgray;
+    border: 2px solid black;
+    text-align: justify;
+    text-decoration: underline wavy;
+    font-style: italic;
+    padding: 10px;
+}
+
+.sample_border1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  border-width: 2px 5px;
+  color: black;
+}
+
+.sample_border2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  border-width: 5px 2px;
+  color: black;
+}
+
+.sample_border3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid red;
+  border-radius: 30px 0px;
+  color: black;
+}
+
+.sample_border4 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid red;
+  border-radius: 0px 30px 10px;
+  color: black;
+}
+.sample_border5 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed red;
+  color: black;
+}
+.sample_border6 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px dotted red;
+  color: black;
+}
+
+pre {
+  border: solid 2px black;
+}
+
 #index {
   border-width: 0px 1px 1px 0px;
   border-color: #F2F2F2;
@@ -44,6 +123,57 @@ footer {
   text-decoration: underline;
 }
 
+.side_bar {
+  display: inline-block;
+  border-left: 1px solid #F2F2F2;
+  margin: 0px 0px 0px 30px;
+  padding-right: 10px;
+}
+
+.content {
+  padding: 0px 60px;
+  margin: 0px;
+}
+
+.canvas {
+  background: white;
+  width: 500px;
+  height: 300px;
+  border-width: 5px;
+  border-style: inset;
+  color: black;
+  padding: 10px;
+}
+
+.big_canvas {
+  background: white;
+  width: 500px;
+  height: 500px;
+  border-width: 5px;
+  border-style: inset;
+  color: black;
+  padding: 10px;
+}
+
+.bigger_canvas {
+  background: white;
+  width: 1000px;
+  height: 700px;
+  border-width: 5px;
+  border-style: inset;
+  color: black;
+  padding: 10px;
+}
+
+.title {
+  margin-bottom: 0;
+  text-align: center;
+  border: solid #F2F2F2;
+  border-width: 1px 0px;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+}
+
 .tap {
   margin: 0px;
   font-size: 40px;
@@ -52,4 +182,71 @@ footer {
 
 .tap:hover {
   text-decoration: underline;
+}
+
+legend {
+  border: red dashed 2px;
+  text-align: center;
+}
+
+.image_box {
+  display: inline-block;
+  width: 200px;
+  border: 2px solid black;
+  background: blue;
+}
+
+.image_box2 {
+  display: inline-block;
+  width: 200px;
+  border: 2px solid black;
+  background: linear-gradient(rgb(0, 0, 255, 0.5), rgb(0, 0, 255, 0.5));
+}
+
+.image_box3 {
+  display: inline-block;
+  border: 2px solid black;
+  background: blue;
+  background: linear-gradient(rgb(0, 0, 255, 0.5), rgb(0, 0, 255, 0.5));
+}
+
+#pseudo_div {
+  border: 2px solid black;
+}
+#pseudo_img {
+  border: 2px dashed red;
+  float: right;
+}
+.vis {
+  overflow: visible;
+}
+.auto {
+  overflow: auto;
+}
+.sizeup {
+  width: 140px;
+  height: 140px;
+  transition: all linear 1s;
+}
+.sizeup:hover {
+  width: 280px;
+  height: 280px;
+  transition: all linear 1s;
+}
+.emoji {
+  border: 2px solid black;
+  display: inline-block;
+
+
+  font-size: 30px;
+  transition: all linear 1s;
+}
+.emoji:hover {
+  font-size: 60px;
+  transition: all linear 1s;
+}
+.emoji_box {
+  border: none;
+  display: flex;
+  justify-content: center;
 }
